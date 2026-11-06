@@ -1,0 +1,23 @@
+{
+  "name": "saas-media-metadata-index",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/media_admin_service.ts",
+    "demo": "node --experimental-strip-types src/index_demo.ts",
+    "test": "node --experimental-strip-types --test src/media_index.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
